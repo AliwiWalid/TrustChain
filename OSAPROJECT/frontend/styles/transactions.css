@@ -1,0 +1,179 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.transactions-page {
+  min-height: 100vh;
+  background-color: #000;
+  color: #fff;
+  padding: 2rem;
+  box-sizing: border-box;
+  overflow-x: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+.transactions-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
+.transactions-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 1rem;
+  margin-bottom: 2rem;
+}
+
+.transactions-header h1 {
+  font-size: 2rem;
+  font-weight: bold;
+  flex: 1;
+}
+
+.transactions-header button {
+  background-color: #6d44b8;
+  color: white;
+  padding: 0.6rem 1.2rem;
+  border-radius: 8px;
+  font-weight: 600;
+  white-space: nowrap;
+  transition: background-color 0.3s ease;
+  cursor: pointer; /* Ensure the button is clickable */
+}
+
+.transactions-header button:hover {
+  background-color: #5a39a1;
+}
+
+.status-text {
+  text-align: center;
+  color: #ccc;
+}
+
+.status-text.error {
+  color: #f87171;
+}
+
+.transaction-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+  justify-content: center;
+}
+
+.transaction-card {
+  background-color: #1a1a1a;
+  border: 1px solid #2a2a2a;
+  border-radius: 12px;
+  padding: 1.25rem;
+  width: 100%;
+  max-width: 360px;
+  box-shadow: 0 4px 12px rgba(109, 68, 184, 0.2);
+  transition: transform 0.2s;
+}
+
+.transaction-card:hover {
+  transform: translateY(-4px);
+}
+
+.transaction-card .card-row {
+  margin-bottom: 0.5rem;
+  word-break: break-word;
+  display: flex;
+  justify-content: space-between;
+  gap: 0.5rem;
+  flex-wrap: wrap;
+}
+
+.create-button-wrapper {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 2rem;
+}
+
+.create-button-wrapper button {
+  background-color: #6d44b8;
+  color: white;
+  padding: 0.75rem 1.25rem;
+  border-radius: 10px;
+  font-weight: 600;
+  font-size: 1rem;
+  transition: background-color 0.3s ease;
+  cursor: pointer;
+}
+
+.create-button-wrapper button:hover {
+  background-color: #5a39a1;
+}
+
+/* Form layout */
+.form-wrapper {
+  width: 100%;
+  max-width: 600px;
+}
+
+.transaction-form {
+  background-color: #1a1a1a;
+  border: 1px solid #2a2a2a;
+  padding: 2rem;
+  border-radius: 16px;
+  box-shadow: 0 4px 20px rgba(109, 68, 184, 0.3);
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+/* Typography */
+.form-title {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
+
+.form-message {
+  color: #f87171;
+  font-size: 0.9rem;
+  margin-bottom: 0.5rem;
+}
+
+/* Inputs */
+.form-input {
+  padding: 0.75rem 1rem;
+  background-color: #2a2a2a;
+  border: 1px solid #444;
+  border-radius: 8px;
+  color: white;
+  font-size: 1rem;
+  outline: none;
+}
+
+.form-input::placeholder {
+  color: #888;
+}
+
+.form-input:focus {
+  border-color: #6d44b8;
+}
+
+/* Submit button */
+.submit-button {
+  background-color: #6d44b8;
+  color: white;
+  padding: 0.75rem 1.25rem;
+  border-radius: 10px;
+  font-weight: 600;
+  font-size: 1rem;
+  transition: background-color 0.3s ease;
+  cursor: pointer;
+}
+
+.submit-button:hover {
+  background-color: #5a39a1;
+}

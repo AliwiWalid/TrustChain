@@ -1,0 +1,244 @@
+/* Global Styles */
+body {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  font-family: 'Jost', sans-serif;
+  background: linear-gradient(to bottom, #0f0c29, #302b63, #24243e);
+}
+
+/* Sidebar Styles */
+.sidebar {
+  background-color: #1f2937; /* Dark gray background */
+  height: 100vh;
+  width: 250px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  padding-top: 20px;
+  display: flex;
+  flex-direction: column;
+  transition: width 0.3s ease-in-out;
+}
+
+.sidebar button {
+  color: #fff;
+  font-weight: bold;
+  margin: 15px 0;
+  padding: 10px;
+  cursor: pointer;
+  background-color: transparent;
+  border: none;
+  text-align: left;
+  transition: background-color 0.3s;
+}
+
+.sidebar button:hover {
+  background-color: #6d44b8; /* Hover with your color */
+}
+
+.sidebar .logout-btn {
+  margin-top: auto;
+  color: #e74c3c;
+}
+
+.sidebar .logout-btn:hover {
+  background-color: transparent;
+  color: #e74c3c;
+}
+
+/* System Status in Sidebar */
+.system-status-box {
+  margin-top: 20px;
+  padding: 10px;
+  background-color: black;
+  border: 1px solid #333;
+  border-radius: 8px;
+}
+
+.status-indicator {
+  display: flex;
+  align-items: center;
+  margin-bottom: 5px;
+}
+
+.status-light {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  margin-right: 8px;
+}
+
+.status-light.green {
+  background-color: #00ff00;
+}
+
+/* Main Content Area */
+.main-content {
+  margin-left: 250px;
+  padding: 20px;
+  color: white;
+}
+
+.main-content h1 {
+  font-size: 2.5rem;
+  font-weight: 600;
+  color: #6d44b8;
+}
+
+/* Dashboard Cards */
+.dashboard-cards {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 20px;
+}
+
+.card {
+  background-color: #2d3748;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+}
+
+.card h2 {
+  font-size: 1.25rem;
+  font-weight: 500;
+}
+
+.card p {
+  font-size: 2rem;
+  font-weight: 700;
+}
+
+/* Recent Transactions Section */
+.recent-transactions {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 20px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+  background-color: #2d3748;
+  padding: 20px;
+  border-radius: 8px;
+}
+
+.recent-transactions ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.recent-transactions li {
+  padding: 10px 0;
+  border-bottom: 1px solid #4b5563;
+}
+
+.recent-transactions button {
+  margin-top: 10px;
+  padding: 10px 20px;
+  background-color: #6d44b8;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.recent-transactions button:hover {
+  background-color: #573b8a;
+}
+
+/* Most Popular Products Section */
+.popular-products {
+  margin-top: 20px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+  background-color: #2d3748;
+  padding: 20px;
+  border-radius: 8px;
+}
+
+.popular-products h2 {
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+.popular-products ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.popular-products li {
+  padding: 10px 0;
+  border-bottom: 1px solid #4b5563;
+  font-size: 1rem;
+  font-weight: 500;
+}
+
+/* Hover and Button Effects */
+button {
+  background-color: #6d44b8;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #573b8a;
+}
+
+/* Most Popular Products Section */
+.popular-products {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+  background-color: #2d3748;
+  padding: 20px;
+  border-radius: 8px;
+}
+
+.popular-products h2 {
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+.popular-products ul {
+  list-style-type: none;
+  padding: 0;
+  text-align: center;
+}
+
+.popular-products li {
+  padding: 10px 0;
+  border-bottom: 1px solid #4b5563;
+  font-size: 1rem;
+  font-weight: 500;
+}
+
+.popular-products button {
+  margin-top: 10px;
+  padding: 10px 20px;
+  background-color: #6d44b8;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.popular-products button:hover {
+  background-color: #573b8a;
+}
